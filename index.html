@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoList</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>To Do List Ktbo3-4</h1>
+    </header>
+    <form>
+
+      <div class="art">
+
+        <div class="contInp">
+          <input type="text" class="todo-input" placeholder="Имя задачи" />
+          <input type="text" class="todo-dis" placeholder="Описание" />
+        </div>
+
+        <div class="contInput">
+          <div class="but">
+              <button class="todo-button" type="submit">
+                  <i class="fas fa-plus-square"></i>
+              </button>
+          </div>
+
+          <div class="select">
+              <select name="todos" class="filter-todo">
+                <option value="all">Все</option>
+                <option value="completed">Выполнено</option>
+                <option value="uncompleted">Не выполнено</option>
+              </select>
+          </div>
+        </div>
+
+      </div>
+
+    </form>
+    
+    <div class="todo-container">
+      <h2>Ваши задачи</h2>
+      <hr>
+      <ul class="todo-list"></ul>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
